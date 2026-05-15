@@ -1,0 +1,113 @@
+.dance-forms {
+  padding: 120px 0;
+  background: linear-gradient(to bottom, #120b08, #1b110d);
+  position: relative;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #d4af37;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Cinzel", serif;
+  color: #f8e7c2;
+  margin-bottom: 4rem;
+}
+
+.section-title span {
+  color: #d4af37;
+}
+
+.forms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.dance-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.12);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: 0.4s;
+  backdrop-filter: blur(8px);
+}
+
+.dance-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(212, 175, 55, 0.35);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.card-image {
+  height: 250px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.18),
+    rgba(90, 40, 20, 0.5)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4af37;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  font-family: "Cinzel", serif;
+  color: #f8e7c2;
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  color: #d5c2a2;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 0.96rem;
+}
+
+.card-content a {
+  padding: 12px 28px;
+  border-radius: 40px;
+  border: 1px solid #d4af37;
+  background: transparent;
+  color: #d4af37;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  background: #d4af37;
+  color: #120b08;
+}
+
+
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.3rem;
+  }
+
+  .card-image {
+    height: 240px;
+  }
+}
