@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reviews.css">
+  </head>
+  <body>
+    <section class="reviews-section">
+      <div class="container">
+        <p class="section-subtitle">STUDENT EXPERIENCES</p>
+
+        <h2 class="section-title">What Our <span>Students Say</span></h2>
+
+        <!-- REVIEW CARDS -->
+
+        <div class="reviews-container" id="reviewsContainer">
+          <div class="review-card">
+            <h3>Anjali</h3>
+            <p>
+              Learning Bharatanatyam here has been a beautiful experience. The
+              instructors are patient and deeply passionate about classical
+              dance.
+            </p>
+          </div>
+
+          <div class="review-card">
+            <h3>Keerthana</h3>
+            <p>
+              The academy atmosphere feels traditional and peaceful. I improved
+              my expressions and confidence a lot.
+            </p>
+          </div>
+
+          <div class="review-card">
+            <h3>Meghana</h3>
+            <p>
+              I love the way the gurus teach every mudra and movement with so
+              much detail and dedication.
+            </p>
+          </div>
+        </div>
+
+        <!-- REVIEW FORM -->
+
+        <div class="review-form">
+          <input type="text" id="username" placeholder="Your Name" />
+
+          <textarea
+            id="userReview"
+            rows="5"
+            placeholder="Write your review here..."
+          ></textarea>
+
+          <button onclick="addReview()">Submit Review</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="reviews.js"></script>
+  </body>
+</html>
