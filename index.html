@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/instructors.css" />
@@ -25,9 +25,9 @@
 
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
-          <li><a href="dance-forms.html">Dance Forms</a></li>
+          <li><a href="pages/dance-forms.html">Dance Forms</a></li>
           <li><a href="#gurus">Gurus</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="pages/reviews.html">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -62,7 +62,7 @@
 
           <div class="hero-buttons">
             <a href="#contact" class="primary-btn">Join Academy</a>
-            <a href="#dance-forms" class="secondary-btn">Explore More</a>
+            <a href="#gurus" class="secondary-btn">Explore More</a>
           </div>
         </div>
 
@@ -190,22 +190,25 @@
 
           <!-- RIGHT -->
 
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <input type="text" placeholder="Phone Number" />
+          <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="text" placeholder="Phone Number" required />
 
             <textarea
               rows="6"
               placeholder="Write your message here..."
+              required
             ></textarea>
 
             <button type="submit">Send Message</button>
+            <p id="successMessage"></p>
           </form>
         </div>
       </div>
     </section>
 
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

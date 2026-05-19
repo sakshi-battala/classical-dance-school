@@ -88,6 +88,10 @@
   box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
 }
 
+#successMessage {
+  display: none;
+}
+
 
 @media (max-width: 768px) {
   .contact-info h3 {
