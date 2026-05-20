@@ -112,11 +112,11 @@ nav {
     align-items: center;
     padding: 2rem 0;
     gap: 1.5rem;
-
-    display: none;
+    transform: translateX(-700px);
+    transition: 0.4s;
   }
 
   .nav-links.active {
-    display: flex;
+    transform: translateX(0);
   }
 }
